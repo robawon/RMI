@@ -1,5 +1,6 @@
 client\TimeZoneClient.class
 server\TimeZoneConverterImpl.class
-server\TimeZoneServer.class
+client\AppLauncher.class
 server\TimeZoneConverter.class
 com\example\App.class
+server\TimeZoneServer.class
