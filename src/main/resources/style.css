@@ -1,0 +1,93 @@
+.root {
+    -bg-gradient: radial-gradient(center 50% 0%, radius 100%, #0d2f1a, #050b08);
+    -glass-bg: rgba(12, 38, 26, 0.72);
+    -accent: #27ff6a;
+    -text-main: #eafff2;
+    -text-muted: #9adbb6;
+    -border-color: rgba(39, 255, 106, 0.25);
+    
+    -fx-background-color: -bg-gradient;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+.label {
+    -fx-text-fill: -text-muted;
+    -fx-font-size: 0.85em;
+}
+
+.card {
+    -fx-background-color: -glass-bg;
+    -fx-background-radius: 24px;
+    -fx-border-color: -border-color;
+    -fx-border-radius: 24px;
+    -fx-padding: 28px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.7), 60, 0, 0, 25);
+}
+
+.header-label {
+    -fx-font-size: 1.6em;
+    -fx-font-weight: bold;
+    -fx-text-fill: -accent;
+    -fx-alignment: center;
+}
+
+.text-field, .choice-box, .date-picker .text-field {
+    -fx-background-color: rgba(0, 0, 0, 0.35);
+    -fx-border-color: -border-color;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-text-fill: -text-main;
+    -fx-prompt-text-fill: -text-muted;
+    -fx-padding: 8px 12px;
+}
+
+.choice-box .label { -fx-text-fill: -text-main; }
+.choice-box .arrow { -fx-background-color: -text-muted; }
+.choice-box .context-menu { -fx-background-color: -glass-bg; }
+
+.button {
+    -fx-background-radius: 14px;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 15px;
+    -fx-font-size: 0.95em;
+}
+
+.btn-primary {
+    -fx-background-color: linear-gradient(to bottom right, -accent, #1edc59);
+    -fx-text-fill: #032010;
+    -fx-effect: dropshadow(three-pass-box, rgba(39, 255, 106, 0.45), 18, 0, 0, 0);
+}
+
+.btn-secondary {
+    -fx-background-color: transparent;
+    -fx-text-fill: -accent;
+    -fx-border-color: -border-color;
+    -fx-border-radius: 14px;
+}
+
+.status-label {
+    -fx-text-fill: -text-muted;
+    -fx-alignment: center;
+}
+
+.result-box {
+    -fx-background-color: rgba(0, 0, 0, 0.45);
+    -fx-background-radius: 18px;
+    -fx-border-color: -border-color;
+    -fx-border-radius: 18px;
+    -fx-padding: 18px;
+    -fx-text-fill: -accent;
+    -fx-font-size: 1.25em;
+    -fx-alignment: center;
+}
+
+.news-area {
+    -fx-text-fill: -accent;
+    -fx-control-inner-background: #000000;
+    -fx-background-color: #000000;
+    -fx-border-color: -border-color;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+}
+.news-area .content { -fx-background-color: #000000; }
