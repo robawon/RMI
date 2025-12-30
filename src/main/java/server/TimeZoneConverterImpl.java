@@ -13,6 +13,14 @@ public class TimeZoneConverterImpl extends UnicastRemoteObject implements TimeZo
         super();
     }
 
+    public static TimeZoneConverterImpl createInstance() {
+        try {
+            return new TimeZoneConverterImpl();
+        } catch (RemoteException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     @Override
     public String convertTime(String time, String fromZone, String toZone) throws RemoteException {
         if (time == null || time.trim().isEmpty()) {
