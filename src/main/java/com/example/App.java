@@ -12,7 +12,7 @@ import java.rmi.Naming;
 
 public class App extends Application {
 
-    private  TimeZoneConverter converter;
+    private TimeZoneConverter converter;
 
     @Override
     public void start(Stage primaryStage) {
@@ -48,7 +48,6 @@ public class App extends Application {
                     "AKST: Alaska Standard Time (UTC-9)",
                     "HST: Hawaii-Aleutian Standard Time (UTC-10)");
             fromZoneChoiceBox.setValue("GMT: Greenwich Mean Time (UTC+0)");
-
             ChoiceBox<String> toZoneChoiceBox = new ChoiceBox<>();
             toZoneChoiceBox.getItems().addAll(
                     "GMT: Greenwich Mean Time (UTC+0)",
@@ -67,7 +66,6 @@ public class App extends Application {
                     "AKST: Alaska Standard Time (UTC-9)",
                     "HST: Hawaii-Aleutian Standard Time (UTC-10)");
             toZoneChoiceBox.setValue("GMT: Greenwich Mean Time (UTC+0)");
-
             Button convertButton = new Button("Convert");
 
             Label resultLabel = new Label();
