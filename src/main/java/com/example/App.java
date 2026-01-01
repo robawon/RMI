@@ -12,7 +12,7 @@ import java.rmi.Naming;
 
 public class App extends Application {
 
-    private TimeZoneConverter converter;
+    private  TimeZoneConverter converter;
 
     @Override
     public void start(Stage primaryStage) {
